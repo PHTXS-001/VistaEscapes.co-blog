@@ -1,7 +1,7 @@
 baseURL = "https://vistaescapes.co/blog/"
-title = "VistaEscapes.co Blog"
+title = "Vista Escapes | Architectural Dreamscapes"
 theme = "hugo-theme-cleanwhite"
-languageCode = "en-us"
+languageCode = "en-gb"
 preserveTaxonomyNames = true
 hasCJKLanguage = false 
 
@@ -12,20 +12,31 @@ hasCJKLanguage = false
   home = ["HTML", "RSS"]
 
 [params]
-  header_image = "img/drakensberg-hero.jpg"
-  SEOTitle = "VistaEscapes.co | Architectural Dreamscapes"
-  description = "Exploring the intersection of AI design and remote hilltop living."
-  keyword = "Architecture, Design, Dreamscapes, VistaEscapes, Travel, Aesthetics"
+# 1. Page Header & Branding
+  # Using the Drakensberg hero shot for the Week 1 launch
+  header_image = "img/drakensberg-hero.jpg" 
+  
+  # Long-tail SEO title to differentiate from the .com competitor
+  SEOTitle = "Vista Escapes | Architectural Dreamscapes" 
+  description = "Exploring the intersection of AI design and remote hilltop living. New concept every week."
+  
+  # Swapping navbar text for logo (Ensure file is in static/img/nav-logo.png)
+  logo = "img/nav-logo.png" 
+  
+  keyword = "Architecture, Design, Dreamscapes, Vista Escapes, Remote Luxury, AI Art"
   slogan = "Visualizing the peak of remote luxury living."
   upstreamAttribution = true
+
 # 2. Custom Aesthetics - Alpine Minimalist Palette
+  # This links to your file for changing link colours to Ascent Gold (#C5A059)
   custom_css = ["css/custom.css"]
 
   image_404 = "img/404-bg.jpg"
   title_404 = "You've wandered into the wilderness :("
   omit_categories = false
 
-  # 3. Disabling Unwanted Features for a "Quiet" UI
+# 3. Disabling "Developer" Features for a "Quiet" UI
+  # Essential for moving away from the default theme look
   reward = false
   friends = false
   bookmarks = false
@@ -33,25 +44,28 @@ hasCJKLanguage = false
   googleAnalytics = ""
   disqus_proxy = ""
   
-  # 4. Sidebar Cleaning
+# 4. Sidebar Identity & Trust
+  # Establishing the 'Architectural Lab' persona
   sidebar_about_description = "Exploring the intersection of AI design and remote hilltop living."
-  sidebar_avatar = "img/logo-watermark.png"
+  sidebar_avatar = "img/logo-watermark.png" # Your B&W outline logo
 
-  # 5. Affiliate-Ready Sidebar & Tag Cloud
+# 5. Affiliate-Ready Infrastructure
+  # Enables the luxury 'Tag Cloud' for styles like 'Eco-Brutalism'
   featured_tags = true
   featured_condition_size = 1 
 
-# 6. Social Settings - Cleaned for Luxury Aesthetic
+# 6. Social Settings - Refined for High-End Aesthetic
   [params.social]
     rss = true
     email = "hello@vistaescapes.co"
-    instagram = "https://instagram.com/yourhandle"
+    # Ensure handle is secured to avoid competitor confusion
+    instagram = "https://instagram.com/thevistaescapes" 
     github = ""
     twitter = ""
     linkedin = ""
     facebook = ""
     
-      # 7. Navigation Menus
+# 7. Navigation Menus
   [[params.additional_menus]]
     title = "ARCHIVE"
     href = "/archive/"
@@ -67,4 +81,5 @@ hasCJKLanguage = false
     style = "dracula"
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      # Allows for affiliate HTML buttons/links inside markdown posts
+      unsafe = true 
