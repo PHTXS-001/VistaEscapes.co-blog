@@ -1,0 +1,62 @@
+baseURL = "https://vistaescapes.co/blog/"
+title = "VistaEscapes.co Blog"
+theme = "hugo-theme-cleanwhite"
+languageCode = "en-us"
+preserveTaxonomyNames = true
+hasCJKLanguage = false # Set to false unless you are writing in Chinese/Japanese/Korean
+
+[pagination]
+  pagerSize = 5 
+
+[outputs]
+home = ["HTML", "RSS"] # Removed Algolia to keep it simple for now
+
+[params]
+  header_image = "img/home-bg-jeep.jpg"
+  SEOTitle = "VistaEscapes.co | Architectural Dreamscapes"
+  description = "Exploring the intersection of architecture, nature, and design."
+  keyword = "Architecture, Design, Dreamscapes, VistaEscapes, Travel, Aesthetics"
+  slogan = "Architectural Dreamscapes"
+  upstreamAttribution = true
+
+  image_404 = "img/404-bg.jpg"
+  title_404 = "You've wandered into the wilderness :("
+  omit_categories = false
+
+  # Comment and Analytics (Left blank for you to fill if needed later)
+  page_view_counter = false
+  googleAnalytics = ""
+  disqus_proxy = ""
+  
+  # Sidebar settings
+  sidebar_about_description = "Curating the world's most breathtaking architectural escapes."
+  # sidebar_avatar = "img/avatar.png" # Upload your logo/photo to static/img/ and uncomment this
+
+  featured_tags = true 
+  featured_condition_size = 1 
+
+  # Social settings - Replace with your handles
+  [params.social]
+  rss            = true 
+  email          = "hello@vistaescapes.co"
+  instagram      = "https://instagram.com/yourhandle" # Example
+  github         = "https://github.com/yourgithub"
+  linkedin       = ""
+
+  # Navigation Menus
+  [[params.additional_menus]]
+  title =  "ARCHIVE"
+  href =  "/blog/archive/"
+  [[params.additional_menus]]
+  title =  "ABOUT"
+  href =  "/blog/about/"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Required for some theme features
