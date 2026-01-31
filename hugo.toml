@@ -3,47 +3,53 @@ title = "VistaEscapes.co Blog"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 preserveTaxonomyNames = true
-hasCJKLanguage = false # Set to false unless you are writing in Chinese/Japanese/Korean
+hasCJKLanguage = false 
 
 [pagination]
   pagerSize = 5 
 
 [outputs]
-home = ["HTML", "RSS"] # Removed Algolia to keep it simple for now
+  home = ["HTML", "RSS"]
 
 [params]
-  header_image = "img/home-bg-jeep.jpg"
+  # 1. The Clean Up - Visual Identity [cite: 3]
+  header_image = "img/drakensberg-hero.jpg" [cite: 4]
   SEOTitle = "VistaEscapes.co | Architectural Dreamscapes"
-  description = "Exploring the intersection of architecture, nature, and design."
+  description = "Exploring the intersection of AI design and remote hilltop living." [cite: 6]
   keyword = "Architecture, Design, Dreamscapes, VistaEscapes, Travel, Aesthetics"
-  slogan = "Architectural Dreamscapes"
+  slogan = "Visualizing the peak of remote luxury living." [cite: 5]
   upstreamAttribution = true
+
+  # 2. Custom Aesthetics - Alpine Minimalist Palette [cite: 14]
+  custom_css = ["css/custom.css"] [cite: 17]
 
   image_404 = "img/404-bg.jpg"
   title_404 = "You've wandered into the wilderness :("
   omit_categories = false
 
-  # Comment and Analytics (Left blank for you to fill if needed later)
+  # 3. Disabling Unwanted Features for a "Quiet" UI [cite: 7]
+  reward = false [cite: 7]
+  friends = false [cite: 8]
+  bookmarks = false [cite: 8]
   page_view_counter = false
   googleAnalytics = ""
   disqus_proxy = ""
   
-  # Sidebar settings
-  sidebar_about_description = "Curating the world's most breathtaking architectural escapes."
-  # sidebar_avatar = "img/avatar.png" # Upload your logo/photo to static/img/ and uncomment this
+  # 4. Sidebar Cleaning [cite: 5]
+  sidebar_about_description = "Exploring the intersection of AI design and remote hilltop living." [cite: 6]
+  sidebar_avatar = "img/logo-watermark.png" [cite: 7]
 
-  featured_tags = true 
+  # 5. Affiliate-Ready Sidebar & Tag Cloud [cite: 10, 11]
+  featured_tags = true [cite: 11]
   featured_condition_size = 1 
 
-  # Social settings - Replace with your handles
+  # 6. Social Settings - Cleaned for Luxury Aesthetic [cite: 1]
   [params.social]
   rss            = true 
   email          = "hello@vistaescapes.co"
-  instagram      = "https://instagram.com/yourhandle" # Example
-  github         = "https://github.com/yourgithub"
-  linkedin       = ""
+  # Social links removed to maintain minimalist look; add back only if verified. [cite: 1]
 
-  # Navigation Menus
+  # 7. Navigation Menus
   [[params.additional_menus]]
   title =  "ARCHIVE"
   href =  "/blog/archive/"
@@ -59,4 +65,4 @@ home = ["HTML", "RSS"] # Removed Algolia to keep it simple for now
     style = "dracula"
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true # Required for some theme features
+      unsafe = true
