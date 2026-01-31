@@ -41,14 +41,16 @@ hasCJKLanguage = false
   featured_tags = true
   featured_condition_size = 1 
 
-# 6. Social Settings - Cleaned for Luxury Aesthetic
-  rss = true 
-  email = "hello@vistaescapes.co"
-
+# 6. Social Settings
   [[params.social]]
     name = "instagram"
     link = "https://instagram.com/yourhandle"
-
+  [[params.social]]
+    name = "email"
+    link = "mailto:hello@vistaescapes.co"
+  [[params.social]]
+    name = "rss"
+    link = "/index.xml"
   # 7. Navigation Menus
   [[params.additional_menus]]
     title = "ARCHIVE"
