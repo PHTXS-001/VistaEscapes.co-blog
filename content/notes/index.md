@@ -1,8 +1,6 @@
 ---
-layout: page
+title: "Notes"
+layout: Notes
+type: Notes
+description: Notes.
 ---
-
-## [Go 语言学习笔记](https://zhaohuabing.com/learning-golang)
-
-## [Envoy 学习笔记](https://zhaohuabing.com/learning-envoy) 
-
