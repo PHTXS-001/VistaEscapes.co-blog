@@ -1,5 +1,5 @@
 baseURL = "https://vistaescapes.co/blog/"
-title = "Vista Escapes | Architectural Dreamscapes"
+title = "Vista Escapes.co | Architectural Dreamscapes"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-gb"
 preserveTaxonomyNames = true
@@ -17,7 +17,8 @@ hasCJKLanguage = false
   header_image = "img/drakensberg-hero.jpg" 
   
   # Long-tail SEO title to differentiate from the .com competitor
-  SEOTitle = "Vista Escapes | Architectural Dreamscapes" 
+  SEOTitle = "Vista Escapes.co 
+  | Architectural Dreamscapes" 
   description = "Exploring the intersection of AI design and remote hilltop living. New concept every week."
   
   # Swapping navbar text for logo (Ensure file is in static/img/nav-logo.png)
