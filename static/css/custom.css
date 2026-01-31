@@ -1,0 +1,12 @@
+/* Adjusting the Hero Header Height */
+header.intro-header {
+    height: 60vh; /* 'vh' means view height. Increase to 70 or 80 if you want it taller */
+    min-height: 450px; /* Ensures it doesn't get too small on mobile */
+    background-attachment: scroll !important; /* Helps with positioning */
+}
+
+/* Ensures the text stays centered in the new height */
+header.intro-header .site-heading, 
+header.intro-header .post-heading {
+    padding: 150px 0; 
+}
