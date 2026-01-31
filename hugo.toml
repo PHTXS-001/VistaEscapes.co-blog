@@ -17,8 +17,7 @@ hasCJKLanguage = false
   header_image = "img/drakensberg-hero.jpg" 
   
   # Long-tail SEO title to differentiate from the .com competitor
-  SEOTitle = "Vista Escapes.co 
-  | Architectural Dreamscapes" 
+  SEOTitle = "Vista Escapes.co | Architectural Dreamscapes" 
   description = "Exploring the intersection of AI design and remote hilltop living. New concept every week."
   
   # Swapping navbar text for logo (Ensure file is in static/img/nav-logo.png)
